@@ -5,29 +5,52 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+
     <header class="main-header">
+      <a class="main-header-logo">
+        <img class="main-logo" src="img/logo.jpg" width="" height=""
+        alt="Логотип Глейси">
+      </a>
+
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img class="main-logo" src="img/logo.jpg" width="" height=""
-          alt="Логотип Глейси">
-        </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a class="button-catalog" href="catalog.html">Каталог</a>
+            <ul>
+              <li>Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>
+          </li>
           <li><a href="shipping.html">Доставка и оплата</a></li>
           <li><a href="About">О компании</a></li>
         </ul>
+
         <ul class="user-navigation">
+          <li class="find">Поиск</li>
           <li class="login-link">Вход</li>
           <li class="bag-empty">Пусто</li>
         </ul>
       </nav>
+
+      <div>
+        <p>С 10 до 20 ежедневно</p>
+        <a href="#">8 812 450-25-25</a>
+      </div>
     </header>
+
     <main>
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="slide">
         <h2 class="visually-hidden"></h2>
         <button class="btn-slider">Давайте оба!</button>
+        <nav class="slide-navigation">
+
+        </nav>
       </section>
+
       <section class="sale">
         <h2 class="visually-hidden">Акция</h2>
         <div class="raspberry-sale">
@@ -47,6 +70,7 @@
           <button class="btn-chocolate">Хочу шоколадки!</button>
         </div>
       </section>
+
       <section class="hit">
         <h2 class="visually-hidden">Хиты!</h2>
         <ul class="hit-selling">
@@ -84,44 +108,68 @@
           </li>
         </ul>
       </section>
+
       <section class="features">
-        <h2>О Магазине</h2>
+        <h2 class="visually-hidden">О Магазине</h2>
         <h3>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого
             собственного производства на развес
         </h3>
-        <p class="features-icecream">
+        <div class="features-wrapper">
+
+          <p class="features-icecream">
           Все наше мороженое изготавливается на собственном производстве, с
           использованием современного оборудования и проверенных временем технологий.
-        </p>
-        <p class="features-components">
+          </p>
+
+          <p class="features-components">
           Для приготовления мороженого используются настоящие сливки и молоко
           высочайшего качества. Все дополнительные ингридиенты и добавки произведены
           из натурального, экологически чистого сырья.
-        </p>
-        <p class="features-purchase">
+          </p>
+
+          <p class="features-purchase">
           Закупка ингридиентов производится только у проверенных фермерских хозяйств
           и компаний, с которыми нас связывает долговременное сотрудничество.
-        </p>
-        <p class="features-shipping">
+          </p>
+
+          <p class="features-shipping">
           Доставка нашего мороженого до заказчика осуществляется в специальном
           термопаке, который не дает мороженому растять в пути  и позволяет сохранить
           превосходный вкус.
-        </p>
+          </p>
+        </div>
       </section>
+
       <section class="supporting-information">
         <article>
           <h2 class="visually-hidden">Способы сервировки</h2>
           <p>
             Новое в нашем блоге
           </p>
-          <h3>10 способов сервировки фруктовых щербетов к столу</h3>
-          <form>
-
-          </form>
+          <h3>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </h3>
         </article>
+        <form>
+
+        </form>
       </section>
+
       <div class="store-location">
+        <div class="map"></div>
+        <div class="map-info">
+          <p>
+            Адрес главного офиса <br>
+            и оффлайн магазина
+          </p>
+          <p>ул. Большая Конюшенная <br> 19/8, Санкт-Петербург</p>
+          <p>Для заказов по телефону</p>
+          <a href="#">8 812 450 25 25</a>
+          <p>(с 10 до 20 ежедневно)</p>
+          <button class="map-button" type="button">Форма обратной связи</button>
+        </div>
       </div>
+
       <footer class="main-footer">
         <div class="social-network">
           <ul class="footer-social">
@@ -131,6 +179,7 @@
             <li><a class="social-button" href="#">Вконтакте</a></li>
           </ul>
         </div>
+
         <nav class="footer-navigation">
           <ul class="footer-navigation-items">
             <li><a href="#">Для поставщиков</a></li>
@@ -139,25 +188,16 @@
             <li><a href="#">Экологические стандарты</a></li>
           </ul>
         </nav>
+
         <div class="copyright">
-          <img src="img/htmlacademy.jpg" width="" height="" alt="Лого htmlacademy">
+          <a href="#"><img src="img/htmlacademy.jpg" width="" height=""
+            alt="Лого htmlacademy"></a>
           <p>
-            Сделано в HTML Academy © 2017
+            Сделано в <a href="#">HTML Academy</a> © 2017
           </p>
         </div>
       </footer>
 
-      <section class="menu-catalog">
-        <h2>Меню Каталога</h2>
-        <ul>
-          <li>Новинки</li>
-          <hr>
-          <li>Сливочное</li>
-          <li>Щербеты</li>
-          <li>Фруктовый лед</li>
-          <li>Мелорин</li>
-        </ul>
-      </section>
       <section class="login">
         <h2 class="visually-hidden">Форма входа</h2>
         <span>Электорнная почта</span><br />
@@ -165,7 +205,7 @@
         <a class="button" href="#">Войти</a>
         <ul>
           <li><a href="#">Забыли войти?</a></li>
-          <li><a href="#"></a>Новая регистрация</a></li>
+          <li><a href="#"></a>Новая регистрация</></li>
         </ul>
       </section>
       <form class="search">
@@ -173,14 +213,15 @@
         <span>Что ищем?</span>
       </form>
       <section class="feedback">
-        <h2 class="visually-hidden">Обратная связь</h2>
+        <h2 class="visually-hidden">Обратная связь!</h2>
         <h3>Мы обязательно вам ответим!</h3>
         <span>Как вас зовут?</span>
         <span>Ваша почта для ответа?</span>
         <span>Напишите что-нибудь...</span>
         <a class="button" href="#">Отправить</a>
-        <span>x</span>
+        <spa
       </section>
     </main>
+
   </body>
 </html>
