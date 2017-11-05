@@ -6,27 +6,50 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="main-header-logo">
+        <img class="main-logo" src="img/logo.jpg" width="" height=""
+        alt="Логотип Глейси">
+      </a>
+
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img class="main-logo" src="img/logo.jpg" width="" height=""
-          alt="Логотип Глейси">
-        </a>
         <ul class="site-navigation">
-          <li><a class="button" href="catalog.html">Каталог</a></li>
+          <li>
+            <a class="button-catalog" href="catalog.html">Каталог</a>
+            <ul>
+              <li>Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>
+          </li>
           <li><a href="shipping.html">Доставка и оплата</a></li>
-          <li><a href="About.html">О компании</a></li>
+          <li><a href="About">О компании</a></li>
         </ul>
+
         <ul class="user-navigation">
+          <li class="find">Поиск</li>
           <li class="login-link">Вход</li>
           <li class="bag-empty">2 товара</li>
         </ul>
       </nav>
+
+      <div>
+        <p>С 10 до 20 ежедневно</p>
+        <a href="#">8 812 450-25-25</a>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden">Каталог мороженого</h1>
+      <ul class="">
+        <a href="#"><li>Главная</li></a>
+        <a href="#"><li>Каталог</li></a>
+        <a href="#"><li>Сливочное</li></a>
+      </ul>
+      <h2>Сливочное мороженое</h2>
       <section class="filter">
         <form>
-
+          <button class="" type="submit">Применить</button>
         </form>
       </section>
       <section class="main-catalog">
@@ -67,6 +90,7 @@
           По аналогии делаем разметку для остальных 6 элеметнов.
           -->
         </ul>
+
         <nav class="main-page-navigation">
           <ul class="navigation-pages">
             <li><a href="#"><</a></li>
@@ -78,30 +102,35 @@
             <li><a href="#">></a></li>
           </ul>
         </nav>
-        <footer class="main-footer">
-          <div class="social-network">
-            <ul class="footer-social">
-              <li><a class="social-button" href="#">Твиттер</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Вконтакте</a></li>
-            </ul>
-          </div>
-          <nav class="footer-navigation">
-            <ul class="footer-navigation-items">
-              <li><a href="#">Для поставщиков</a></li>
-              <li><a href="#">О производстве</a></li>
-              <li><a href="#">Наши документы</a></li>
-              <li><a href="#">Экологические стандарты</a></li>
-            </ul>
-          </nav>
-          <div class="copyright">
-            <img src="img/htmlacademy.jpg" width="" height="" alt="Лого htmlacademy">
-            <p>
-              Сделано в HTML Academy © 2017
-            </p>
-          </div>
-        </footer>
+      </section>
+
+      <footer class="main-footer">
+        <div class="social-network">
+          <ul class="footer-social">
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+          </ul>
+        </div>
+
+        <nav class="footer-navigation">
+          <ul class="footer-navigation-items">
+            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="#">О производстве</a></li>
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>
+        </nav>
+
+        <div class="copyright">
+          <a href="#"><img src="img/htmlacademy.jpg" width="" height=""
+            alt="Лого htmlacademy"></a>
+          <p>
+            Сделано в <a href="#">HTML Academy</a> © 2017
+          </p>
+        </div>
+      </footer>
     </main>
   </body>
   </html>
