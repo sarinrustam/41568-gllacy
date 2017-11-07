@@ -38,7 +38,7 @@
         </li>
 
         <li class="user-item user-item-enter"><a class="user-item-enter-link" href="#">Вход</a>
-          <div class="user-item-enter-form">
+          <form class="user-item-enter-form">
             <h2 class="visually-hidden">Форма входа</h2>
             <input class="user-item-enter-input" type="email" placeholder="Электронная почта">
             <input class="user-item-enter-input" type="password" placeholder="Пароль">
@@ -47,10 +47,33 @@
               <a class="user-item-enter-link" href="#">Забыли войти?</a>
               <a class="user-item-enter-link" href="#">Новая регистрация</a>
             </div>
-
+          </form>
+        </li>
+        <li class="user-item"><a class="user-link" href="#">2 товара</a>
+          <div class="user-bag">
+            <table class="user-bag-table">
+              <tr class="user-bag-row">
+                <td class="user-bag-cell"><button class="user-bag-delete" type="button">Удалить</button></td>
+                <td class="user-bag-cell"><img class="user-bag-icon" src="img/table-icon1.jpg" href="#" alt="Мороженка"></td>
+                <td class="user-bag-cell">Пломбир с апельсиновым джемом</td>
+                <td class="user-bag-cell">1,5 кг х <span>200 руб.</span></td>
+                <td class="user-bag-cell">300 рублей</td>
+              </tr>
+              <tr class="user-bag-row">
+                <td class="user-bag-cell"><button class="user-bag-delete" type="button">Удалить</button></td>
+                <td class="user-bag-cell"><img class="user-bag-icon" src="img/table-icon2.jpg" href="#" alt="Мороженка"></td>
+                <td class="user-bag-cell">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="user-bag-cell">1,5 кг х <span>300 руб.</span></td>
+                <td class="user-bag-cell">300 рублей</td>
+              </tr>
+            </table>
+            <p>
+              Итого: 750 руб.
+            </p>
+            <a class="user-bag-button" href="#">Оформить заказ</a>
           </div>
         </li>
-        <li class="user-item"><a class="user-link" href="#">2 товара</a></li>
+
     </nav>
 
     <div>
@@ -68,7 +91,7 @@
     <h1>Сливочное мороженое</h1>
 
       <form class="filter-form">
-        <!--Полную разметку формы сделаю на Вебинаре №4 ;) -->
+        <!--Полную разметку формы сделаю на Вебинаре №4 я пока не умею группировать формы ;) -->
       </form>
 
     <section class="main-catalog">
@@ -78,72 +101,85 @@
           <p class="main-catalog-text">
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream2.jpg" width="" height="" alt="Сливочно-кофейное">
           <span class="main-catalog-price">380P/кг</span>
           <p class="main-catalog-text">
             Сливочно-кофейное с кусочками шоколада
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
-        <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream3.jpg" width="" height="" alt="Сливочно-клубничное">
+        <li class="main-catalog-item">
+          <img class="main-catalog-image" src="img/catalog-icream3.jpg" width="" height="" alt="Сливочно-клубничное">
           <span class="main-catalog-price">355P/кг</span>
           <p class="main-catalog-text">
             Сливочно-клубничное с присыпкой из белого шоколада
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream4.jpg" width="" height="" alt="Сливочное крем-брюле">
           <span class="main-catalog-price">415P/кг</span>
           <p class="main-catalog-text">
             Сливочное крем-брюле с карамельной подливкой
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream5.jpg" width="" height="" alt="Сливочное с брусничным">
           <span class="main-catalog-price">325P/кг</span>
           <p class="main-catalog-text">
             Сливочное с брусничным джемом
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream6.jpg" width="" height="" alt="Сливочно-черничное">
           <span class="main-catalog-price">410P/кг</span>
           <p class="main-catalog-text">
             Сливочно-черничное с цельными ягодами черники
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream7.jpg" width="" height="" alt="Сливочно-лимонное">
           <span class="main-catalog-price">375P/кг</span>
           <p class="main-catalog-text">
             Сливочно-лимонное с карамельной присыпкой
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream8.jpg" width="" height="" alt="Сливочное с шоколадной стружкой">
           <span class="main-catalog-price">320P/кг</span>
           <p class="main-catalog-text">
             Сливочное с шоколадной стружкой
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream9.jpg" width="" height="" alt="Сливочно-ванильное">
           <span class="main-catalog-price">440P/кг</span>
           <p class="main-catalog-text">
             Сливочно-ванильное с кусочками шоколада
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream10.jpg" width="" height="" alt="Сливочное с ментоловым сиропом">
           <span class="main-catalog-price">435P/кг</span>
           <p class="main-catalog-text">
             Сливочноe с ментоловым сиропом
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream11.jpg" width="" height="" alt="Сливочное с кусочками черного шоколада">
           <span class="main-catalog-price">355P/кг</span>
           <p class="main-catalog-text">
             Сливочное с кусочками черного шоколада
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
         <li class="main-catalog-item"><img class="main-catalog-image" src="img/catalog-icream12.jpg" width="" height="" alt="Сливочное с мятным сиропом">
           <span class="main-catalog-price">420P/кг</span>
           <p class="main-catalog-text">
             Сливочное с мятным сиропом
           </p>
+          <button class="button button-hidden">Быстрый просмотр</button>
         </li>
       </ul>
 
