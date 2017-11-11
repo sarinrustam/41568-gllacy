@@ -31,23 +31,24 @@
         <ul class="main-nav-user user">
           <li class="user-item user-item-find"><a href="#">Поиск</a>
             <div class="user-item-find-form">
-              <h2 class="visually-hidden">Строка поиска</h2>
-              <input class="user-item-find-input" type="text" placeholder="Что ищем?">
+              <label class="visually-hidden" for="search">Строка поиска</label>
+              <input class="user-item-find-input" type="search" name="search" id="search" placeholder="Что ищем?">
             </div>
           </li>
 
           <li class="user-item user-item-enter"><a class="user-item-enter-link" href="#">Вход</a>
-            <div class="user-item-enter-form">
+            <form class="user-item-enter-form" method="get" action="https://echo.htmlacademy.ru">
               <h2 class="visually-hidden">Форма входа</h2>
-              <input class="user-item-enter-input" type="email" placeholder="Электронная почта">
-              <input class="user-item-enter-input" type="password" placeholder="Пароль">
-              <button class="user-item-enter-button button" type="submit">Войти</button>
+              <label class="visually-hidden" for="user-email">Электронная почта</label>
+              <input class="user-item-enter-input" type="email" id="user-email" name="email" placeholder="Электронная почта" required>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="user-item-enter-input" name="password" id="user-password" type="password" placeholder="Пароль" required>
+              <button class="user-item-enter-button button" type="submit" aria-label="Войти">Войти</button>
               <div class="user-item-enter-links">
                 <a class="user-item-enter-link" href="#">Забыли войти?</a>
                 <a class="user-item-enter-link" href="#">Новая регистрация</a>
               </div>
-
-            </div>
+            </form>
           </li>
           <li class="user-item"><a class="user-link" href="#">Пусто</a></li>
       </nav>
@@ -180,8 +181,9 @@
             самого вкусного, что у нас происходит. Обещаем не спамить и не слать
             всякой ненужной ерунды. Честно =)
           </p>
-          <input class="subscribe-form-input" type="email" placeholder="Электронная почта">
-          <button class="subscribe-form-button button" type="submit">Отправить</button>
+          <label class="visually-hidden" for="email"></label>
+          <input class="subscribe-form-input" type="email" id="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+          <button class="subscribe-form-button button" type="submit" aria-label="Отправить">Отправить</button>
         </form>
       </section>
 
