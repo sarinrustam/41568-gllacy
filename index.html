@@ -230,14 +230,17 @@
 
 
 
-      <section class="feedback">
-        <h1 class="visually-hidden">Обратная связь!</h1>
-        <b>Мы обязательно вам ответим!</b>
-        <input class="feedback-input" type="text" placeholder="Как вас зовут?">
-        <input class="feedback-input" type="email" placeholder="Ваша почта для ответа?">
-        <textarea class="feedback-textarea" placeholder="Напишите что-нибудь...">
+      <form class="feedback" method="get" action="https://echo.htmlacademy.ru">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p>Мы обязательно вам ответим!</p>
+        <label class="visually hidden" for="feedback-name"></label>
+        <input class="feedback-input" type="text" id="feedback-name" name="name" placeholder="Как вас зовут?" required>
+        <label class="visually-hidden" for="feedback-email"></label>
+        <input class="feedback-input" type="email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
+        <label class="visually-hidden" for="comment"></label>
+        <textarea class="feedback-textarea" id="comment" name="comment" placeholder="Напишите что-нибудь...">
         </textarea>
-        <button class="feedback-button button" type="submit">Отправить</button>
+        <button class="feedback-button button" type="submit" aria-label="Отправить данные">Отправить</button>
       </section>
     </main>
 
