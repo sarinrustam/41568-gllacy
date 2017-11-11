@@ -38,11 +38,13 @@
         </li>
 
         <li class="user-item user-item-enter"><a class="user-item-enter-link" href="#">Вход</a>
-          <form class="user-item-enter-form">
+          form class="user-item-enter-form" method="get" action="https://echo.htmlacademy.ru">
             <h2 class="visually-hidden">Форма входа</h2>
-            <input class="user-item-enter-input" type="email" placeholder="Электронная почта">
-            <input class="user-item-enter-input" type="password" placeholder="Пароль">
-            <button class="user-item-enter-button button" type="submit">Войти</button>
+            <label class="visually-hidden" for="user-email">Электронная почта</label>
+            <input class="user-item-enter-input" type="email" id="user-email" name="email" placeholder="Электронная почта" required>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="user-item-enter-input" name="password" id="user-password" type="password" placeholder="Пароль" required>
+            <button class="user-item-enter-button button" type="submit" aria-label="Войти">Войти</button>
             <div class="user-item-enter-links">
               <a class="user-item-enter-link" href="#">Забыли войти?</a>
               <a class="user-item-enter-link" href="#">Новая регистрация</a>
