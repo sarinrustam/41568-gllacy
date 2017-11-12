@@ -32,13 +32,13 @@
       <ul class="main-nav-user user">
         <li class="user-item user-item-find"><a href="#">Поиск</a>
           <div class="user-item-find-form">
-            <h2 class="visually-hidden">Строка поиска</h2>
-            <input class="user-item-find-input" type="text" placeholder="Что ищем?">
+            <label class="visually-hidden" for="search">Строка поиска</label>
+            <input class="user-item-find-input" type="search" name="search" id="search" placeholder="Что ищем?">
           </div>
         </li>
 
         <li class="user-item user-item-enter"><a class="user-item-enter-link" href="#">Вход</a>
-          form class="user-item-enter-form" method="get" action="https://echo.htmlacademy.ru">
+          <form class="user-item-enter-form" method="get" action="https://echo.htmlacademy.ru">
             <h2 class="visually-hidden">Форма входа</h2>
             <label class="visually-hidden" for="user-email">Электронная почта</label>
             <input class="user-item-enter-input" type="email" id="user-email" name="email" placeholder="Электронная почта" required>
@@ -93,11 +93,46 @@
         <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Сливочное</a></li>
     </ul>
     <h1>Сливочное мороженое</h1>
-
-      <form class="filter-form">
-        <!--Полную разметку формы сделаю на Вебинаре №4 я пока не умею группировать формы ;) -->
-      </form>
-
+    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="visually-hidden">Фильтр</h2>
+        <fieldset class="filter-fieldset">
+          <legend class="filter-legend">Сортировка:</legend>
+          <label class="visually-hidden" for="popular">Сортировка по критериям</label>
+          <select class="filter-select" id="popular" required>
+            <option class="filter-option" value="by-pop">По популярности</option>
+          </select>
+        </fieldset>
+        <fieldset class="filter-fieldset">
+          <legend class="filter-legend">Цена: 100 руб. - 500 руб.</legend>
+          <label class="visually-hidden" for="cost">Стоимость мороженого</label>
+          <input class="filter-range" type="range" id="cost" name="cost" min="100" max="500" step="1" value="400" required>
+      </fieldset>
+      <fieldset class="filter-fieldset">
+        <legend class="filter-legend">Жирность:</legend>
+        <input class="filter-radio" type="radio" id="0%" name="fatiness" value="0%">
+        <label class="filter-label" for="0%">0%</label>
+        <input class="filter-radio" type="radio" id="0-10%" name="fatiness" value="0-10%" checked>
+        <label class="filter-label" for="0-10%">до 10%</label>
+        <input class="filter-radio" type="radio" id="10-30%" name="fatiness" value="10-30%">
+        <label class="filter-label" for="10-30%">до 30%</label>
+        <input class="filter-radio" type="radio" id="above30%" name="fatiness" value="above-30%">
+        <label class="filter-label" for="above30%">свыше 30%</label>
+      </fieldset>
+      <fieldset class="filter-fieldset">
+        <legend class="fiter-legend">Наполнители:</legend>
+        <input class="filter-checkbox" type="checkbox" id="choсolate-filler" name="filler" value="chocolate" checked>
+        <label class="filter-label" for="choсolate-filler">шоколадные</label>
+        <input class="filter-checkbox" type="checkbox" id="sugar-powder" name="filler" value="sugar-powder" checked>
+        <label class="filter-label" for="sugar-powder">сахарные присыпки</label>
+        <input class="filter-checkbox" type="checkbox" id="fruits" name="filler" value="fruits">
+        <label class="filter-label" for="fruits">фрукты</label>
+        <input class="filter-checkbox" type="checkbox" id="syrup" name="filler" value="syrup">
+        <label class="filter-label" for="syrup">сиропы</label>
+        <input class="filter-checkbox" type="checkbox" id="jam" name="filler" value="jam">
+        <label class="filter-label" for="jam">джемы</label>
+      </fieldset>
+      <button class="filter-button" type="button" aria-label="Применить настройки фильтра">Применить</button>
+    </form>
     <section class="main-catalog">
       <ul class="main-catalog-list">
         <li class="main-catalog-item"><img class="main-catalog-image"
