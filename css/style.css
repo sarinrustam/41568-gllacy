@@ -600,3 +600,46 @@ body {
   outline: 3px solid pink;
   background-color: rgba(255,105,180, 0.2);
 }
+
+
+/* флексбоксы для catalog.html */
+.user-bag {
+  display: none;
+}
+.breadcrumbs {
+  max-width: 865px;
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+  display: flex;
+}
+.filter {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+  max-width: 865px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-catalog {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+  max-width: 1146px;
+
+}
+.main-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-catalog-item {
+  max-width: 267px;
+}
+.button-hidden {
+  display: none;
+}
+.main-catalog-nav {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+  display: flex;
+}
+.catalog-nav-list {
+  display: flex;
+}
