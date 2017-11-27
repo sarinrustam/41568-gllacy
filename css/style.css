@@ -235,6 +235,13 @@ input {
   font-weight: 700;
   color: #ffffff;
 }
+
+.location-info {
+
+  max-width: 302px;
+  max-height: 305px;
+  background-color: white;
+}
 .location-info-text {
   font-size: 14px;
   line-height: 20px;
@@ -445,4 +452,151 @@ input {
 .catalog-nav-item-active .catalog-nav-link,
 .catalog-nav-item:active .catalog-nav-link {
   color: #000000;
+}
+
+/* Флексбоксы */
+html,
+body {
+  width: 1200px;
+  min-height: 1750px;
+}
+body {
+  /*временно для сетки*/
+  background-image: url("../img/glacy-index-1200.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  position: relative;
+  display: flex;
+  outline: 3px solid green;
+  background-color: rgba(50,205,50, 0.2);
+}
+
+.main-content {
+  outline: 3px solid green;
+  background-color: rgba(50,205,50, 0.2);
+}
+
+.main-header-logo {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+}
+
+.main-header-main-nav {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.main-nav-menu {
+  display: flex;
+}
+.main-nav-user {
+  display: flex;
+}
+.hours {
+    position: absolute;
+    right: 0;
+    transform: translateY(100%);
+    outline: 3px solid pink;
+    background-color: rgba(255,105,180, 0.2);
+}
+.main-nav-sub {
+  display: none;
+}
+.user-item-find-form {
+  display: none;
+}
+.user-item-enter-form {
+  display: none;
+}
+.visually-hidden {
+  display: none;
+}
+.slide {
+  background-image: url("../img/icecream_one.png");
+  min-height: 575px;
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+}
+.sale {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+}
+.sale-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sale-item {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+}
+.sale-button {
+  margin-left: auto;
+}
+.hit {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+}
+.hit-selling {
+  display: flex;
+  justify-content: space-between;
+}
+.hit-selling-item {
+  max-width: 267px;
+}
+.features {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+}
+.features-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-text {
+  max-width: 539px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+}
+.blog-news,
+.subscribe-form {
+  max-width: 560px;
+}
+.location {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+}
+.main-footer {
+  outline:  3px solid green;
+  background-color: rgba(50,205,50, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer-social {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+  display: flex;
+}
+.main-footer-nav {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+  max-width: 345px;
+}
+.nav-list {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-footer-copyright {
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
 }
