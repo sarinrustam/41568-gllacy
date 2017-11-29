@@ -13,7 +13,10 @@ body  {
   background-position: top center;
   background-repeat: no-repeat;
 }
-
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 a {
   text-decoration: underline;
 }
@@ -23,7 +26,27 @@ input {
   font-weight: 700;
   color: #323232;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip-path: inset(100%);
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.main-nav-item {
+  margin-right: 28px;
+}
 .main-nav-item:active .main-nav-link {
   color: #323232;
   text-decoration: none;
@@ -57,12 +80,40 @@ input {
 .hit-selling,
 .main-catalog-list,
 .catalog-nav-list {
+  padding-left: 0;
   list-style: none;
+}
+.user-item {
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 32px;
+  margin-left: 10px;
+}
+.user-item-bag {
+  padding-left: 45px;
+  width: 72px;
+  background-image: url("../img/bag.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 6px;
+}
+.user-item-enter {
+  padding-left: 45px;
+  width: 47px;
+  background-image: url("../img/enter.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 6px;
+}
+.user-item-find {
+  width: 32px;
+  background-image: url("../img/lupa.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .user-item-link {
   text-decoration: none;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 32px;
+  vertical-align: middle;
   font-weight: 500;
   color: #ffffff;
 }
@@ -106,8 +157,15 @@ input {
 }
 .hours {
   text-align: right;
+  position: absolute;
+  right: 27px;
+  top: 72px;
+  outline: 3px solid pink;
+  background-color: rgba(255,105,180, 0.2);
 }
 .hours-text {
+  margin-top: 0px;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -462,11 +520,12 @@ body {
 }
 body {
   /*временно для сетки*/
-  background-image: url("../img/glacy-index-1200.jpg");
+  background-image: url("../img/gllacy-index-1200.jpg");
   background-repeat: no-repeat;
 }
 
 .main-header {
+  padding: 0 27px;
   position: relative;
   display: flex;
   outline: 3px solid green;
@@ -479,6 +538,8 @@ body {
 }
 
 .main-header-logo {
+  margin-top: 9px;
+  margin-right: 24px;
   outline: 3px solid pink;
   background-color: rgba(255,105,180, 0.2);
 }
@@ -488,6 +549,7 @@ body {
   background-color: rgba(255,105,180, 0.2);
   display: flex;
   flex-grow: 1;
+  align-items: center;
   justify-content: space-between;
 }
 .main-nav-menu {
@@ -495,13 +557,6 @@ body {
 }
 .main-nav-user {
   display: flex;
-}
-.hours {
-    position: absolute;
-    right: 0;
-    transform: translateY(100%);
-    outline: 3px solid pink;
-    background-color: rgba(255,105,180, 0.2);
 }
 .main-nav-sub {
   display: none;
@@ -512,16 +567,7 @@ body {
 .user-item-enter-form {
   display: none;
 }
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
+
 .slide {
   background-image: url("../img/icecream_one.png");
   background-repeat: no-repeat;
