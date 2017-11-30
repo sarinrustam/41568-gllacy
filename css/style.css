@@ -108,6 +108,7 @@ input[type="radio"].visually-hidden {
 .catalog-nav-list {
   padding-left: 0;
   list-style: none;
+
 }
 .user-item {
   border-radius: 16px;
@@ -311,11 +312,14 @@ input[type="radio"].visually-hidden {
   background-color: rgba(155, 175, 163, 0.2);
 }
 .hit-selling-price {
+  position: absolute;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   color: #ffffff;
   text-align: left;
+  margin: 0px;
+  top: 210px;
 }
 .hit-selling-weight {
   font-size: 30px;
@@ -330,6 +334,9 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: #ffffff;
   text-align: center;
+}
+.hit-selling-image {
+  margin-bottom: 8px;
 }
 .features-title {
   font-size: 24px;
@@ -718,10 +725,22 @@ body {
   background-color: rgba(255,105,180, 0.2);
 }
 .hit-selling {
+  padding: 0 27px;
+  padding-top: 22px;
   display: flex;
   justify-content: space-between;
 }
+.hit-selling-label {
+  position: absolute;
+  background-image: url("../img/hit.svg");
+  width: 61px;
+  height: 61px;
+  left: 0;
+  top: 0;
+}
 .hit-selling-item {
+  text-align: center;
+  position: relative;
   max-width: 267px;
 }
 .features {
