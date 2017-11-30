@@ -16,6 +16,32 @@ body  {
 .container {
   width: 1200px;
   margin: 0 auto;
+
+  background-image: url("../img/gllacy-index-1200.jpg");
+  background-repeat: no-repeat;
+}
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/icecream_two.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/icecream_three.png");
+}
+.site-wrapper {
+  min-width: 940px;
+  background-color: #849d8f;
+  background-image: url("../img/icecream_one.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 a {
   text-decoration: underline;
@@ -45,7 +71,7 @@ input[type="radio"].visually-hidden {
   border: 0;
 }
 .main-nav-item {
-  margin-right: 28px;
+  margin-right: 27px;
 }
 .main-nav-item:active .main-nav-link {
   color: #323232;
@@ -189,28 +215,67 @@ input[type="radio"].visually-hidden {
 .button:active {
   background-color: #de593b;
 }
-.slide-title {
-  font-size: 60px;
-  line-height: 60.35px;
-  font-weight: 700;
-  color: #ffffff;
-  text-align: center;
+.slide {
+  display: none;
 }
-.slide-button {
-  font-size: 32px;
-  line-height: 44px;
+.slider {
+  position: relative;
+  padding-top: 314px;
+  text-align: center;
+  margin-left: 27px;
+  margin-right: 27px;
+
+}
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.slider-title {
+  font-size: 60px;
+  line-height: 60px;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  text-decoration: none;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
 }
 
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/icecream_one.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/icecream_two.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/icecream_three.png");
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
 .sale-title {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
   color: #ffffff;
   text-align: left;
+  margin: 0px;
+  margin-bottom: 17px;
 }
 .sale-text {
   font-size: 18px;
@@ -218,13 +283,28 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #ffffff;
   text-align: left;
+  margin: 0px;
 }
 .sale-button {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  padding: 12px 22px;
+  margin-top: auto;
   color: #ffffff;
   text-align: center;
+
+  margin-left: auto;
+  text-decoration: none;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+
 }
 .hit-selling-item:hover,
 .main-catalog-item:hover {
@@ -518,12 +598,6 @@ body {
   margin: 0 auto;
   min-height: 1750px;
 }
-body {
-  /*временно для сетки*/
-  background-image: url("../img/gllacy-index-1200.jpg");
-  background-repeat: no-repeat;
-}
-
 .main-header {
   padding: 0 27px;
   position: relative;
@@ -539,7 +613,7 @@ body {
 
 .main-header-logo {
   margin-top: 9px;
-  margin-right: 24px;
+  margin-right: 25px;
   outline: 3px solid pink;
   background-color: rgba(255,105,180, 0.2);
 }
@@ -567,29 +641,77 @@ body {
 .user-item-enter-form {
   display: none;
 }
+.slider-button {
+  display: inline-block;
+  padding: 12px 44px;
 
-.slide {
-  background-image: url("../img/icecream_one.png");
-  background-repeat: no-repeat;
-  min-height: 575px;
-  outline: 3px solid pink;
-  background-color: rgba(255,105,180, 0.2);
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+
+  margin-bottom: 43px;
+}
+
+.slider-button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
 }
 .sale {
+  padding: 0 27px;
   outline: 3px solid pink;
   background-color: rgba(255,105,180, 0.2);
 }
 .sale-wrapper {
   display: flex;
   justify-content: space-between;
+
 }
 .sale-item {
-  max-width: 560px;
+  max-width: 520px;
+  height: 184px;
+  border-radius: 12px;
+  padding: 23px 20px;
   display: flex;
   flex-direction: column;
-}
-.sale-button {
-  margin-left: auto;
 }
 .hit {
   outline: 3px solid pink;
