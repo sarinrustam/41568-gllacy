@@ -497,18 +497,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #ffffff;
 }
-.copyright-text {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #fefefe;
-}
-.copyright-link {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #fefefe;
-}
+
 .feedback-title {
   font-size: 24px;
   line-height: 28px;
@@ -838,7 +827,7 @@ body {
 }
 .main-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 27px;
 }
 .main-footer-social {
@@ -847,6 +836,7 @@ body {
   justify-content: space-between;
   margin-top: 35px;
   padding-left: 2px;
+  margin-right: 202px;
 
 }
 
@@ -862,18 +852,48 @@ body {
 }
 
 .main-footer-nav {
-
-  max-width: 345px;
-}
-.nav-list {
-
   display: flex;
   flex-wrap: wrap;
+  max-width: 340px;
+  margin-top: 13px;
+}
+.nav-item {
+  width: 162px;
+}
+.nav-item:nth-child(odd) {
+  padding-left: 22px;
+  width: 139px;
+}
+.nav-item-heart {
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position-y: 7px;
+}
+.nav-list {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
 }
 .main-footer-copyright {
-
+  margin-left: auto;
+  margin-top: 18px;
 }
-
+.copyright-text {
+  margin: 0;
+}
+.copyright-text {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fefefe;
+}
+.copyright-link {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fefefe;
+}
 
 /* флексбоксы для catalog.html */
 .user-bag {
