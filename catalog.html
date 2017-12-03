@@ -11,84 +11,55 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <a class="main-header-logo logo">
-      <img class="logo-image" src="img/logo.svg" width="154" height="64"
-      alt="Логотип Глейси">
-    </a>
-
-    <nav class="main-header-main-nav main-nav">
-      <ul class="main-nav-menu">
-        <li class="main-nav-item main-nav-item-active">
-          <a class="main-nav-link" href="#">Каталог</a>
-          <ul class="main-nav-sub">
-            <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Новинки</a></li>
-            <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Сливочное</a></li>
-            <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Щербеты</a></li>
-            <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Фруктовый лед</a></li>
-            <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Мелорин</a></li>
-          </ul>
-        </li>
-        <li class="main-nav-item"><a class="main-nav-link" href="shipping.html">Доставка и оплата</a></li>
-        <li class="main-nav-item"><a class="main-nav-link" href="About.html">О компании</a></li>
-      </ul>
-
-      <ul class="main-nav-user user">
-        <li class="user-item user-item-find"><a class="user-item-link" href="#">Поиск</a>
-          <div class="user-item-find-form">
-            <label class="visually-hidden" for="search">Строка поиска</label>
-            <input class="user-item-find-input" type="search" name="search" id="search" placeholder="Что ищем?">
-          </div>
-        </li>
-
-        <li class="user-item user-item-enter"><a class="user-item-link" href="#">Вход</a>
-          <form class="user-item-enter-form" method="get" action="https://echo.htmlacademy.ru">
-            <h2 class="visually-hidden">Форма входа</h2>
-            <label class="visually-hidden" for="user-email">Электронная почта</label>
-            <input class="user-item-enter-input" type="email" id="user-email" name="email" placeholder="Электронная почта" required>
-            <label class="visually-hidden" for="user-password">Пароль</label>
-            <input class="user-item-enter-input" name="password" id="user-password" type="password" placeholder="Пароль" required>
-            <button class="user-item-enter-button button" type="submit" aria-label="Войти">Войти</button>
-            <div class="user-item-enter-links">
-              <a class="user-item-enter-link" href="#">Забыли войти?</a>
-              <a class="user-item-enter-link" href="#">Новая регистрация</a>
-            </div>
-          </form>
-        </li>
-        <li class="user-item user-item-bag"><a class="user-item-link" href="#">2 товара</a></li>
-          <div class="user-bag">
-            <table class="user-bag-table">
-              <tr class="user-bag-row">
-                <td class="user-bag-cell"><button class="user-bag-delete" type="button">Удалить</button></td>
-                <td class="user-bag-cell"><img class="user-bag-icon" src="img/user-bag-table-icon.jpg"
-                  width="33" height="33" href="#" alt="Мороженка"></td>
-                <td class="user-bag-cell">Пломбир с апельсиновым джемом</td>
-                <td class="user-bag-cell">1,5 кг х <span class="user-bag-price">200 руб.</span></td>
-                <td class="user-bag-cell">300 рублей</td>
-              </tr>
-              <tr class="user-bag-row">
-                <td class="user-bag-cell"><button class="user-bag-delete" type="button">Удалить</button></td>
-                <td class="user-bag-cell"><img class="user-bag-icon" src="img/user-bag-table-icon2.jpg"
-                  width="33" height="33" href="#" alt="Мороженка"></td>
-                <td class="user-bag-cell">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="user-bag-cell">1,5 кг х <span class="user-bag-price">300 руб.</span></td>
-                <td class="user-bag-cell">300 рублей</td>
-              </tr>
-            </table>
-            <p class="user-bag-total">
-              Итого: 750 рублей.
-            </p>
-            <a class="user-bag-button" href="#">Оформить заказ</a>
-          </div>
-        </li>
-
-    </nav>
-
-    <div class="hours">
-      <p class="hours-text">С 10 до 20 ежедневно</p>
-      <a class="hours-link" href="#">8 812 450-25-25</a>
-    </div>
-  </header>
+  <div class="site-wrapper">
+    <div class="container">
+    <header class="main-header">
+      <a class="main-header-logo logo">
+        <img class="logo-image" src="img/logo.svg" width="154" height="64"
+        alt="Логотип Глейси"></a>
+      <nav class="main-header-main-nav main-nav">
+        <ul class="main-nav-menu">
+          <li class="main-nav-item">
+            <a class="main-nav-link main-nav-link-active" href="catalog.html">Каталог</a>
+            <ul class="main-nav-sub">
+              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Новинки</a></li>
+              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Сливочное</a></li>
+              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Щербеты</a></li>
+              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Фруктовый лед</a></li>
+              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="main-nav-item"><a class="main-nav-link" href="#">Доставка и оплата</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="#">О Компании</a></li>
+        </ul>
+        <ul class="main-nav-user user">
+          <li class="user-item"><a class="user-item-link user-link-find" href="#"><span class="visually-hidden">Поиск</span></a>
+            <div class="user-item-find-form">
+              <label class="visually-hidden" for="search">Строка поиска</label>
+              <input class="user-item-find-input" type="search" name="search" id="search" placeholder="Что ищем?">
+            </div></li>
+          <li class="user-item"><a class="user-item-link user-link-enter" href="#">Вход</a>
+            <form class="user-item-enter-form" method="get" action="https://echo.htmlacademy.ru">
+              <h2 class="visually-hidden">Форма входа</h2>
+              <label class="visually-hidden" for="user-email">Электронная почта</label>
+              <input class="user-item-enter-input" type="email" id="user-email" name="email" placeholder="Электронная почта" required>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="user-item-enter-input" name="password" id="user-password" type="password" placeholder="Пароль" required>
+              <button class="user-item-enter-button button" type="submit" aria-label="Войти">Войти</button>
+              <div class="user-item-enter-links">
+                <a class="user-item-enter-link" href="#">Забыли войти?</a>
+                <a class="user-item-enter-link" href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </li>
+          <li class="user-item"><a class="user-item-link user-link-bag" href="#">2 товара</a></li>
+        </ul>
+      </nav>
+      <div class="hours">
+        <p class="hours-text">С 10 до 20, ежедневно</p>
+        <a class="hours-link" href="#">8 812 450-25-25</a>
+      </div>
+    </header>
 
   <main class="main-content">
     <ul class="breadcrumbs">
@@ -275,8 +246,9 @@
           Сделано в <a class="copyright-link" href="#">HTML Academy</a> &copy;	 2017
         </p>
       </div>
-    </footer>
-  </main>
+    </footer></main>
+  </div>
+</div>
 </body>
 
 </html>
