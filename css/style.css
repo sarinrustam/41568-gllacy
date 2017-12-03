@@ -524,7 +524,9 @@ input[type="radio"].visually-hidden {
 
 
 .location {
-  background-image: url("../img/map.jpg");
+  width: 1200px;
+  height: 430px;
+  background-image: url("../img/map-bg.jpg");
   background-repeat: no-repeat;
 }
 .feedback {
@@ -830,22 +832,35 @@ body {
 }
 .info {
   padding: 0 27px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
-}
-
-.location {
-
 }
 .main-footer {
-
   display: flex;
   justify-content: space-between;
+  padding: 0 27px;
 }
 .main-footer-social {
-
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 35px;
+  padding-left: 2px;
+
 }
+
+.social-item {
+  margin-right: 13px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255, 0.5);
+  border-radius: 50%;
+}
+
 .main-footer-nav {
 
   max-width: 345px;
