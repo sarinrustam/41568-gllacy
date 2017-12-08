@@ -13,53 +13,57 @@
 <body>
   <div class="site-wrapper">
     <div class="container">
-    <header class="main-header">
-      <a class="main-header-logo logo">
-        <img class="logo-image" src="img/logo.svg" width="154" height="64"
-        alt="Логотип Глейси"></a>
-      <nav class="main-header-main-nav main-nav">
-        <ul class="main-nav-menu">
-          <li class="main-nav-item">
-            <a class="main-nav-link main-nav-link-active" href="catalog.html">Каталог</a>
-            <ul class="main-nav-sub">
-              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Новинки</a></li>
-              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Сливочное</a></li>
-              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Щербеты</a></li>
-              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Фруктовый лед</a></li>
-              <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="main-nav-item"><a class="main-nav-link" href="#">Доставка и оплата</a></li>
-          <li class="main-nav-item"><a class="main-nav-link" href="#">О Компании</a></li>
-        </ul>
-        <ul class="main-nav-user user">
-          <li class="user-item"><a class="user-item-link user-link-find" href="#"><span class="visually-hidden">Поиск</span></a>
-            <div class="user-item-find-form">
-              <label class="visually-hidden" for="search">Строка поиска</label>
-              <input class="user-item-find-input" type="search" name="search" id="search" placeholder="Что ищем?">
-            </div></li>
-          <li class="user-item"><a class="user-item-link user-link-enter" href="#">Вход</a>
-            <form class="user-item-enter-form" method="get" action="https://echo.htmlacademy.ru">
-              <h2 class="visually-hidden">Форма входа</h2>
-              <label class="visually-hidden" for="user-email">Электронная почта</label>
-              <input class="user-item-enter-input" type="email" id="user-email" name="email" placeholder="Электронная почта" required>
-              <label class="visually-hidden" for="user-password">Пароль</label>
-              <input class="user-item-enter-input" name="password" id="user-password" type="password" placeholder="Пароль" required>
-              <button class="user-item-enter-button button" type="submit" aria-label="Войти">Войти</button>
-              <div class="user-item-enter-links">
-                <a class="user-item-enter-link" href="#">Забыли войти?</a>
-                <a class="user-item-enter-link" href="#">Новая регистрация</a>
+      <header class="main-header">
+        <a class="main-header-logo logo">
+          <img class="logo-image" src="img/logo.svg" width="154" height="64"
+          alt="Логотип Глейси"></a>
+        <nav class="main-header-main-nav main-nav">
+          <ul class="main-nav-menu">
+            <li class="main-nav-item">
+              <a class="main-nav-link main-nav-link-active" href="catalog.html">Каталог</a>
+              <ul class="main-nav-sub">
+                <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Новинки</a></li>
+                <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Сливочное</a></li>
+                <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Щербеты</a></li>
+                <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Фруктовый лед</a></li>
+                <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Доставка и оплата</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">О Компании</a></li>
+          </ul>
+          <ul class="main-nav-user user">
+            <li class="user-item user-item-find"><a class="user-item-link user-link-find" href="#"><span class="visually-hidden">Поиск</span></a>
+              <div class="user-item-find-form">
+                <label class="visually-hidden" for="search">Строка поиска</label>
+                <input class="user-item-find-input" type="search" name="search" id="search" placeholder="Что ищем?">
               </div>
-            </form>
-          </li>
-          <li class="user-item"><a class="user-item-link user-link-bag" href="#">2 товара</a></li>
-        </ul>
-      </nav>
-      <div class="hours">
-        <p class="hours-text">С 10 до 20, ежедневно</p>
-        <a class="hours-link" href="#">8 812 450-25-25</a>
-      </div>
-    </header>
+            </li>
+            <li class="user-item user-item-enter">
+              <a class="user-item-link user-link-enter" href="#">Вход</a>
+              <form class="user-item-enter-form" method="get" action="https://echo.htmlacademy.ru">
+                <h2 class="visually-hidden">Форма входа</h2>
+                <label class="visually-hidden" for="user-email">Электронная почта</label>
+                <input class="user-item-enter-input" type="email" id="user-email" name="email" placeholder="Электронная почта" required>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="user-item-enter-input" name="password" id="user-password" type="password" placeholder="Пароль" required>
+                <div class="user-item-enter-links">
+                <button class="user-item-enter-button button" type="submit" aria-label="Войти">Войти</button>
+                  <div class="user-item-enter-list">
+                    <a class="user-item-enter-link" href="#">Забыли пароль?</a>
+                    <a class="user-item-enter-link" href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="user-item"><a class="user-item-link user-link-bag" href="#">2 товара</a></li>
+          </ul>
+        </nav>
+        <div class="hours">
+          <p class="hours-text">С 10 до 20, ежедневно</p>
+          <a class="hours-link" href="#">8 812 450-25-25</a>
+        </div>
+      </header>
 
     <main class="main-content">
       <ul class="breadcrumbs">
@@ -73,13 +77,13 @@
           <fieldset class="filter-fieldset">
             <legend class="filter-legend">Сортировка:</legend>
             <label class="visually-hidden" for="popular">Сортировка по критериям</label>
-            <div class="filter-wrapper">
+            <div class="filter-wrapper filter-wrapper-select">
             <select class="filter-select" id="popular" required>
-              <option class="filter-option" value="by-pop">По популярности</option>
+              <option class="filter-option" value="by-pop">по популярности</option>
             </select>
           </div>
           </fieldset>
-          <fieldset class="filter-fieldset">
+          <fieldset class="filter-fieldset filter-wrapper-range">
             <label class="visually-hidden" for="cost">Стоимость мороженого</label>
             <legend class="filter-legend">Цена: 100 руб. - 500 руб.</legend>
           <div class="filter-wrapper">
@@ -96,7 +100,7 @@
         <fieldset class="filter-fieldset">
           <legend class="filter-legend">Жирность:</legend>
           <div class="filter-wrapper">
-          <label class="filter-label" for="0%">
+          <label class="filter-label filter-radio-label" for="0%">
             <input class="filter-radio" type="radio" id="0%" name="fatiness" value="0%">
             <svg class="filter-radio-off filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
@@ -112,7 +116,7 @@
             <span class="filter-text">0%</span>
           </label>
 
-          <label class="filter-label" for="0-10%">
+          <label class="filter-label filter-radio-label" for="0-10%">
             <input class="filter-radio" type="radio" id="0-10%" name="fatiness" value="0-10%" checked>
             <svg class="filter-radio-off filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
@@ -128,7 +132,7 @@
             <span class="filter-text">до 10%</span>
           </label>
 
-          <label class="filter-label" for="10-30%">
+          <label class="filter-label filter-radio-label" for="10-30%">
             <input class="filter-radio" type="radio" id="10-30%" name="fatiness" value="10-30%">
             <svg class="filter-radio-off filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
@@ -144,7 +148,7 @@
             <span class="filter-text">до 30%</span>
           </label>
 
-          <label class="filter-label" for="above30%">
+          <label class="filter-label filter-radio-label" for="above30%">
             <input class="filter-radio" type="radio" id="above30%" name="fatiness" value="above-30%">
             <svg class="filter-radio-off filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
@@ -157,14 +161,14 @@
             	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
             <circle cx="12.5" cy="12.5" r="4.5"/>
             </svg>
-            <span class="filter-text">свыше 30%</span>
+            <span class="filter-text">выше 30%</span>
           </label>
         </div>
         </fieldset>
         <fieldset class="filter-fieldset">
           <legend class="filter-legend">Наполнители:</legend>
           <div class="filter-wrapper">
-          <label class="filter-label">
+          <label class="filter-label filter-checkbox-label">
             <input class="filter-checkbox" type="checkbox" name="filler" value="chocolate" checked>
             <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
@@ -188,7 +192,7 @@
           </label>
 
 
-          <label class="filter-label" for="sugar-powder">
+          <label class="filter-label filter-checkbox-label" for="sugar-powder">
             <input class="filter-checkbox filter-checkbox-svg" type="checkbox" id="sugar-powder" name="filler" value="sugar-powder" checked>
             <svg class="filter-checkbox-off" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
@@ -211,7 +215,7 @@
             <span class="filter-text">сахарные присыпки</span>
           </label>
 
-          <label class="filter-label" for="fruits">
+          <label class="filter-label filter-checkbox-label" for="fruits">
             <input class="filter-checkbox" type="checkbox" id="fruits" name="filler" value="fruits">
             <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
@@ -234,7 +238,7 @@
             <span class="filter-text">фрукты</span>
           </label>
 
-          <label class="filter-label" for="syrup">
+          <label class="filter-label filter-checkbox-label" for="syrup">
             <input class="filter-checkbox" type="checkbox" id="syrup" name="filler" value="syrup">
             <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
@@ -257,7 +261,7 @@
             <span class="filter-text">сиропы</span>
           </label>
 
-          <label class="filter-label" for="jam">
+          <label class="filter-label filter-checkbox-label" for="jam">
             <input class="filter-checkbox" type="checkbox" id="jam" name="filler" value="jam">
             <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
@@ -287,100 +291,100 @@
         <ul class="hit-selling">
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice1.png" width="267" height="267" alt="Сливочное с апельсиновым">
-            <p class="hit-selling-price">310P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">310&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
              src="img/ice2.png" width="267" height="267" alt="Сливочно-кофейное">
-            <p class="hit-selling-price">380P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">380&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочно-кофейное с кусочками шоколада
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item">
             <img class="hit-selling-image" src="img/ice3.png" width="267"
              height="267" alt="Сливочно-клубничное">
-            <p class="hit-selling-price">355P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">355&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочно-клубничное с присыпкой из белого шоколада
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice4.png" width="267" height="267" alt="Сливочное крем-брюле">
-            <p class="hit-selling-price">415P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">415&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочное крем-брюле с карамельной подливкой
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice5.png" width="267" height="267" alt="Сливочное с брусничным">
-            <p class="hit-selling-price">325P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">325&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочное с брусничным джемом
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice6.png" width="267" height="267" alt="Сливочно-черничное">
-            <p class="hit-selling-price">410P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">410&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочно-черничное с цельными ягодами черники
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice7.png" width="267" height="267" alt="Сливочно-лимонное">
-            <p class="hit-selling-price">375P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">375&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочно-лимонное с карамельной присыпкой
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-            <p class="hit-selling-price">320P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">320&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочное с шоколадной стружкой
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice9.png" width="267" height="267" alt="Сливочно-ванильное">
-            <p class="hit-selling-price">440P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">440&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочно-ванильное с кусочками шоколада
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-            <p class="hit-selling-price">435P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">435&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочноe с ментоловым сиропом
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-            <p class="hit-selling-price">355P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">355&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочное с кусочками черного шоколада
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
           <li class="hit-selling-item"><img class="hit-selling-image"
             src="img/ice12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
-            <p class="hit-selling-price">420P/<span class="hit-selling-weight">кг</span></p>
+            <p class="hit-selling-price">420&#8381/<span class="hit-selling-weight">кг</span></p>
             <a class="hit-selling-link">
               Сливочное с мятным сиропом
             </a>
-            <button class="button button-hidden">Быстрый просмотр</button>
+            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
           </li>
         </ul>
 
@@ -413,7 +417,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer-border">
         <ul class="main-footer-social social">
             <li class="social-item "><a class="social-link social-link-twitter" href="#"><span class="visually-hidden">Твиттер</span>
               <svg class="social-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
