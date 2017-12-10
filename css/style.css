@@ -577,29 +577,29 @@ input[type="radio"].visually-hidden {
   margin-bottom: 31px;
 }
 
-#product-1:checked ~ .site-wrapper-slider {
+.slider-input-1:checked ~ .site-wrapper-slider {
   background-color: #849d8f;
   background-image: url("../img/icecream_one.png");
 }
 
-#product-2:checked ~ .site-wrapper-slider {
+.slider-input-2:checked ~ .site-wrapper-slider {
   background-color: #8996a6;
   background-image: url("../img/icecream_two.png");
 }
 
-#product-3:checked ~ .site-wrapper-slider {
+.slider-input-3:checked ~ .site-wrapper-slider {
   background-color: #9d8b84;
   background-image: url("../img/icecream_three.png");
 }
 
-#product-1:checked ~ .site-wrapper-slider #slide1,
-#product-2:checked ~ .site-wrapper-slider #slide2,
-#product-3:checked ~ .site-wrapper-slider #slide3 {
+.slider-input-1:checked ~ .site-wrapper-slider .slide-1,
+.slider-input-2:checked ~ .site-wrapper-slider .slide-2,
+.slider-input-3:checked ~ .site-wrapper-slider .slide-3 {
   display: block;
 }
-#product-1:checked ~ .site-wrapper-slider label[for="product-1"],
-#product-2:checked ~ .site-wrapper-slider label[for="product-2"],
-#product-3:checked ~ .site-wrapper-slider label[for="product-3"] {
+.slider-input-1:checked ~ .site-wrapper-slider .slider-label-1,
+.slider-input-2:checked ~ .site-wrapper-slider .slider-label-2,
+.slider-input-3:checked ~ .site-wrapper-slider .slider-label-3 {
   background-color: #ffffff;
 }
 .sale-item_bg-raspberry {
