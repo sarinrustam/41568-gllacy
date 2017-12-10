@@ -15,15 +15,15 @@
     <div class="container">
       <header class="main-header">
         <a class="main-header-logo logo" href="index.html">
-          <img class="logo-image" src="img/logo.svg" width="154" height="64"
+          <img class="logo-image" href="catalog.html" src="img/logo.svg" width="154" height="64"
           alt="Логотип Глейси"></a>
         <nav class="main-header-main-nav main-nav">
           <ul class="main-nav-menu">
-            <li class="main-nav-item">
-              <a class="main-nav-link main-nav-link-active" href="catalog.html">Каталог</a>
+            <li class="main-nav-item main-nav-item-catalog">
+              <a class="main-nav-link main-nav-link-active">Каталог</a>
               <ul class="main-nav-sub">
-                <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Новинки</a></li>
-                <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Сливочное</a></li>
+                <li class="main-nav-sub-item"><p class="main-nav-sub-title">Новинки</p></li>
+                <li class="main-nav-sub-item main-nav-sub-item-active"><a class="main-nav-sub-link" href="#">Сливочное</a></li>
                 <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Щербеты</a></li>
                 <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Фруктовый лед</a></li>
                 <li class="main-nav-sub-item"><a class="main-nav-sub-link" href="#">Мелорин</a></li>
@@ -34,10 +34,10 @@
           </ul>
           <ul class="main-nav-user user">
             <li class="user-item user-item-find"><a class="user-item-link user-link-find" href="#"><span class="visually-hidden">Поиск</span></a>
-              <div class="user-item-find-form">
+              <form class="user-item-find-form">
                 <label class="visually-hidden" for="search">Строка поиска</label>
                 <input class="user-item-find-input" type="search" name="search" id="search" placeholder="Что ищем?">
-              </div>
+              </form>
             </li>
             <li class="user-item user-item-enter">
               <a class="user-item-link user-link-enter" href="#">Вход</a>
@@ -56,7 +56,45 @@
                 </div>
               </form>
             </li>
-            <li class="user-item"><a class="user-item-link user-link-bag" href="#">2 товара</a></li>
+            <li class="user-item  user-item-bag">
+              <a class="user-item-link user-link-bag" href="#">2 товара</a>
+              <div class="user-bag">
+                    <table class="user-bag-table">
+                   <tr class="user-bag-row">
+                     <td class="user-bag-cell">
+                       <button class="user-bag-delete" type="button">
+                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       	 width="11px" height="11px" viewBox="0 0 11 11" enable-background="new 0 0 11 11" xml:space="preserve">
+                         <polygon fill="#231F20" points="10.979,0.728 10.271,0.021 5.5,4.792 0.729,0.021 0.021,0.728 4.793,5.5 0.021,10.271 0.728,10.979
+                       	 5.5,6.207 10.271,10.979 10.979,10.271 6.207,5.5 "/>
+                        </svg>
+                    </button>
+                    </td>
+                     <td class="user-bag-cell"><img class="user-bag-icon" src="img/user-bag-table-icon.png" alt="Мороженка"></td>
+                     <td class="user-bag-cell"><p class="user-bag-name">Пломбир с апельсиновым джемом</p></td>
+                     <td class="user-bag-cell"><p class="user-bag-value">1,5 кг х <span class="user-bag-200">200 руб.</span></p></td>
+                     <td class="user-bag-cell"><p class="user-bag-price">300 руб.</p></td>
+                   </tr>
+                   <tr class="user-bag-row">
+                     <td class="user-bag-cell">
+                       <button class="user-bag-delete" type="button">
+                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="11px" height="11px" viewBox="0 0 11 11" enable-background="new 0 0 11 11" xml:space="preserve">
+                         <polygon fill="#231F20" points="10.979,0.728 10.271,0.021 5.5,4.792 0.729,0.021 0.021,0.728 4.793,5.5 0.021,10.271 0.728,10.979
+                         5.5,6.207 10.271,10.979 10.979,10.271 6.207,5.5 "/>
+                          </svg>
+                        </button>
+                      </td>
+                     <td class="user-bag-cell"><img class="user-bag-icon" src="img/user-bag-table-icon2.png" alt="Мороженка"></td>
+                     <td class="user-bag-cell"><p class="user-bag-name">Клубничный пломбир с присыпкой из белого шоколада</p></td>
+                     <td class="user-bag-cell"><p class="user-bag-value">1,5 кг х <span class="user-bag-200">300 руб.</span></p></td>
+                     <td class="user-bag-cell"><p class="user-bag-price">450 руб.</p></td>
+                   </tr>
+                 </table>
+                 <p class="user-bag-total-price">Итого: 750 руб.</p>
+                 <button class="user-bag-button">Оформить заказ</button>
+               </div>
+            </li>
           </ul>
         </nav>
         <div class="hours">
@@ -65,342 +103,339 @@
         </div>
       </header>
 
-    <main class="main-content">
-      <ul class="breadcrumbs">
-          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Главная</a></li>
-          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
-          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Сливочное</a></li>
-      </ul>
-      <h1 class="catalog-title">Сливочное мороженое</h1>
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <h2 class="visually-hidden">Фильтр</h2>
-          <fieldset class="filter-fieldset filter-fieldset">
-            <legend class="filter-legend">Сортировка:</legend>
-            <label class="visually-hidden" for="popular">Сортировка по критериям</label>
-            <div class="filter-wrapper filter-wrapper-select">
-            <select class="filter-select" id="popular" required>
-              <option class="filter-option" value="by-pop">по популярности</option>
-            </select>
+      <main class="main-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Главная</a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Сливочное</a></li>
+        </ul>
+        <h1 class="catalog-title">Сливочное мороженое</h1>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="visually-hidden">Фильтр</h2>
+            <fieldset class="filter-fieldset filter-fieldset">
+              <legend class="filter-legend">Сортировка:</legend>
+              <label class="visually-hidden" for="popular">Сортировка по критериям</label>
+              <div class="filter-wrapper filter-wrapper-select">
+              <select class="filter-select" id="popular" required>
+                <option class="filter-option" value="">по популярности</option>
+                <option class="filter-option" value="">сначала недорогие</option>
+                <option class="filter-option" value="">сначала дорогие</option>
+                <option class="filter-option" value="">по жирности</option>
+              </select>
+            </div>
+            </fieldset>
+            <fieldset class="filter-fieldset filter-fieldset-range">
+              <legend class="filter-legend filter-legend-range">Цена: 100 руб. – 500 руб.</legend>
+              <label class="visually-hidden">Стоимость мороженого</label>
+            <div class="filter-wrapper filter-wrapper-range">
+              <div class="filter-range-controls">
+                <div class="filter-scale">
+                  <div class="filter-bar"></div>
+                </div>
+                <div class="filter-range-toggle filter-range-toggle-min"></div>
+                <div class="filter-range-toggle filter-range-toggle-max"></div>
+              </div>
+            </div>
+
+          </fieldset>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-legend filter-legend-radio">Жирность:</legend>
+            <div class="filter-wrapper filter-wrapper-radio">
+            <label class="filter-label filter-radio-label" for="0%">
+              <input class="filter-radio" type="radio" id="0%" name="fatiness" value="0%">
+              <svg class="filter-radio-off filter-radio-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+              <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+              	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+              </svg>
+              <svg class="filter-radio-on filter-radio-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+              <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+              	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+              <circle cx="12.5" cy="12.5" r="4.5"/>
+              </svg>
+              <span class="filter-text">0%</span>
+            </label>
+
+            <label class="filter-label filter-radio-label" for="0-10%">
+              <input class="filter-radio" type="radio" id="0-10%" name="fatiness" value="0-10%" checked>
+              <svg class="filter-radio-off filter-radio-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+              <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+              	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+              </svg>
+              <svg class="filter-radio-on filter-radio-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+              <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+              	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+              <circle cx="12.5" cy="12.5" r="4.5"/>
+              </svg>
+              <span class="filter-text">до 10%</span>
+            </label>
+
+            <label class="filter-label filter-radio-label" for="10-30%">
+              <input class="filter-radio" type="radio" id="10-30%" name="fatiness" value="10-30%">
+              <svg class="filter-radio-off filter-radio-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+              <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+              	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+              </svg>
+              <svg class="filter-radio-on filter-radio-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+              <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+              	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+              <circle cx="12.5" cy="12.5" r="4.5"/>
+              </svg>
+              <span class="filter-text">до 30%</span>
+            </label>
+
+            <label class="filter-label filter-radio-label" for="above30%">
+              <input class="filter-radio" type="radio" id="above30%" name="fatiness" value="above-30%">
+              <svg class="filter-radio-off filter-radio-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+              <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+              	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+              </svg>
+              <svg class="filter-radio-on filter-radio-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+              <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+              	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+              <circle cx="12.5" cy="12.5" r="4.5"/>
+              </svg>
+              <span class="filter-text">выше 30%</span>
+            </label>
           </div>
           </fieldset>
-          <fieldset class="filter-fieldset filter-fieldset-range">
-            <label class="visually-hidden" for="cost">Стоимость мороженого</label>
-            <legend class="filter-legend filter-legend-range">Цена: 100 руб. – 500 руб.</legend>
-          <div class="filter-wrapper filter-wrapper-range">
-            <div class="filter-range-controls">
-              <div class="filter-scale">
-                <div class="filter-bar"></div>
-              </div>
-              <div class="filter-range-toggle filter-range-toggle-min"></div>
-              <div class="filter-range-toggle filter-range-toggle-max"></div>
-            </div>
+          <fieldset class="filter-fieldset filter-fieldset-checkbox">
+            <legend class="filter-legend filter-legend-checkbox">Наполнители:</legend>
+            <div class="filter-wrapper filter-wrapper-checkbox">
+            <label class="filter-label filter-label-checkbox">
+              <input class="filter-checkbox" type="checkbox" name="filler" value="chocolate" checked>
+              <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+              <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+              	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+              </svg>
+
+              <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+              	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+
+              <g>
+              	<g>
+              		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+              		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+              			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+              	</g>
+              </g>
+              </svg>
+              <span class="filter-text">шоколадные</span>
+            </label>
+
+
+            <label class="filter-label filter-checkbox-label" for="sugar-powder">
+              <input class="filter-checkbox filter-checkbox-svg" type="checkbox" id="sugar-powder" name="filler" value="sugar-powder" checked>
+              <svg class="filter-checkbox-off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+              <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+              	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+              </svg>
+
+              <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+              	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+
+              <g>
+              	<g>
+              		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+              		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+              			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+              	</g>
+              </g>
+              </svg>
+              <span class="filter-text">сахарные присыпки</span>
+            </label>
+
+            <label class="filter-label filter-checkbox-label" for="fruits">
+              <input class="filter-checkbox" type="checkbox" id="fruits" name="filler" value="fruits">
+              <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+              <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+              	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+              </svg>
+
+              <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+              	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+
+              <g>
+              	<g>
+              		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+              		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+              			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+              	</g>
+              </g>
+              </svg>
+              <span class="filter-text">фрукты</span>
+            </label>
+
+            <label class="filter-label filter-checkbox-label" for="syrup">
+              <input class="filter-checkbox" type="checkbox" id="syrup" name="filler" value="syrup">
+              <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+              <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+              	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+              </svg>
+
+              <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+              	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+
+              <g>
+              	<g>
+              		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+              		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+              			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+              	</g>
+              </g>
+              </svg>
+              <span class="filter-text">сиропы</span>
+            </label>
+
+            <label class="filter-label filter-checkbox-label" for="jam">
+              <input class="filter-checkbox" type="checkbox" id="jam" name="filler" value="jam">
+              <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+              <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+              	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+              </svg>
+
+              <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+              	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+
+              <g>
+              	<g>
+              		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+              		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+              			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+              	</g>
+              </g>
+              </svg>
+              <span class="filter-text">джемы</span>
+            </label>
           </div>
-
-        </fieldset>
-        <fieldset class="filter-fieldset">
-          <legend class="filter-legend filter-legend-radio">Жирность:</legend>
-          <div class="filter-wrapper filter-wrapper-radio">
-          <label class="filter-label filter-radio-label" for="0%">
-            <input class="filter-radio" type="radio" id="0%" name="fatiness" value="0%">
-            <svg class="filter-radio-off filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-            <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-            	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-            </svg>
-            <svg class="filter-radio-on filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-            <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-            	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-            <circle cx="12.5" cy="12.5" r="4.5"/>
-            </svg>
-            <span class="filter-text">0%</span>
-          </label>
-
-          <label class="filter-label filter-radio-label" for="0-10%">
-            <input class="filter-radio" type="radio" id="0-10%" name="fatiness" value="0-10%" checked>
-            <svg class="filter-radio-off filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-            <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-            	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-            </svg>
-            <svg class="filter-radio-on filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-            <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-            	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-            <circle cx="12.5" cy="12.5" r="4.5"/>
-            </svg>
-            <span class="filter-text">до 10%</span>
-          </label>
-
-          <label class="filter-label filter-radio-label" for="10-30%">
-            <input class="filter-radio" type="radio" id="10-30%" name="fatiness" value="10-30%">
-            <svg class="filter-radio-off filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-            <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-            	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-            </svg>
-            <svg class="filter-radio-on filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-            <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-            	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-            <circle cx="12.5" cy="12.5" r="4.5"/>
-            </svg>
-            <span class="filter-text">до 30%</span>
-          </label>
-
-          <label class="filter-label filter-radio-label" for="above30%">
-            <input class="filter-radio" type="radio" id="above30%" name="fatiness" value="above-30%">
-            <svg class="filter-radio-off filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-            <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-            	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-            </svg>
-            <svg class="filter-radio-on filter-radio-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-            <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-            	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-            <circle cx="12.5" cy="12.5" r="4.5"/>
-            </svg>
-            <span class="filter-text">выше 30%</span>
-          </label>
-        </div>
-        </fieldset>
-        <fieldset class="filter-fieldset filter-fieldset-checkbox">
-          <legend class="filter-legend filter-legend-checkbox">Наполнители:</legend>
-          <div class="filter-wrapper filter-wrapper-checkbox">
-          <label class="filter-label filter-label-checkbox">
-            <input class="filter-checkbox" type="checkbox" name="filler" value="chocolate" checked>
-            <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-            <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-            	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-            </svg>
-
-            <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-            	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-            <g id="Layer_1">
-            </g>
-            <g id="Layer_2">
-            	<g>
-            		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-            		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-            			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-            	</g>
-            </g>
-            </svg>
-            <span class="filter-text">шоколадные</span>
-          </label>
-
-
-          <label class="filter-label filter-checkbox-label" for="sugar-powder">
-            <input class="filter-checkbox filter-checkbox-svg" type="checkbox" id="sugar-powder" name="filler" value="sugar-powder" checked>
-            <svg class="filter-checkbox-off" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-            <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-            	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-            </svg>
-
-            <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-            	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-            <g id="Layer_1">
-            </g>
-            <g id="Layer_2">
-            	<g>
-            		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-            		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-            			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-            	</g>
-            </g>
-            </svg>
-            <span class="filter-text">сахарные присыпки</span>
-          </label>
-
-          <label class="filter-label filter-checkbox-label" for="fruits">
-            <input class="filter-checkbox" type="checkbox" id="fruits" name="filler" value="fruits">
-            <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-            <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-            	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-            </svg>
-
-            <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-            	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-            <g id="Layer_1">
-            </g>
-            <g id="Layer_2">
-            	<g>
-            		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-            		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-            			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-            	</g>
-            </g>
-            </svg>
-            <span class="filter-text">фрукты</span>
-          </label>
-
-          <label class="filter-label filter-checkbox-label" for="syrup">
-            <input class="filter-checkbox" type="checkbox" id="syrup" name="filler" value="syrup">
-            <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-            <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-            	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-            </svg>
-
-            <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-            	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-            <g id="Layer_1">
-            </g>
-            <g id="Layer_2">
-            	<g>
-            		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-            		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-            			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-            	</g>
-            </g>
-            </svg>
-            <span class="filter-text">сиропы</span>
-          </label>
-
-          <label class="filter-label filter-checkbox-label" for="jam">
-            <input class="filter-checkbox" type="checkbox" id="jam" name="filler" value="jam">
-            <svg class="filter-checkbox-off filter-checkbox-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-            <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-            	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-            </svg>
-
-            <svg class="filter-checkbox-on filter-checkbox-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-            	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-            <g id="Layer_1">
-            </g>
-            <g id="Layer_2">
-            	<g>
-            		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-            		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-            			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-            	</g>
-            </g>
-            </svg>
-            <span class="filter-text">джемы</span>
-          </label>
-        </div>
-        </fieldset>
-        <button class="filter-button" type="button" aria-label="Применить настройки фильтра">Применить</button>
-      </form>
-      <section class="main-catalog">
-        <ul class="hit-selling">
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice1.png" width="267" height="267" alt="Сливочное с апельсиновым">
-            <p class="hit-selling-price">310<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-             src="img/ice2.png" width="267" height="267" alt="Сливочно-кофейное">
-            <p class="hit-selling-price">380<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочно-кофейное с кусочками шоколада</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item">
-            <img class="hit-selling-image" src="img/ice3.png" width="267"
-             height="267" alt="Сливочно-клубничное">
-            <p class="hit-selling-price">355<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice4.png" width="267" height="267" alt="Сливочное крем-брюле">
-            <p class="hit-selling-price">415<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочное крем-брюле с карамельной подливкой</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice5.png" width="267" height="267" alt="Сливочное с брусничным">
-            <p class="hit-selling-price">325<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочное с брусничным джемом</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice6.png" width="267" height="267" alt="Сливочно-черничное">
-            <p class="hit-selling-price">410<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочно-черничное с цельными ягодами черники</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice7.png" width="267" height="267" alt="Сливочно-лимонное">
-            <p class="hit-selling-price">375<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочно-лимонное с карамельной присыпкой</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-            <p class="hit-selling-price">320<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочное с шоколадной стружкой</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice9.png" width="267" height="267" alt="Сливочно-ванильное">
-            <p class="hit-selling-price">440<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочно-ванильное с кусочками шоколада</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-            <p class="hit-selling-price">435<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочноe с ментоловым сиропом</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-            <p class="hit-selling-price">355<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочное с кусочками черного шоколада</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-          <li class="hit-selling-item"><img class="hit-selling-image"
-            src="img/ice12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
-            <p class="hit-selling-price">420<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
-            <a class="hit-selling-link">Сливочное с мятным сиропом</a>
-            <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
-          </li>
-        </ul>
-
-        <nav class="main-catalog-nav catalog-nav">
-          <a class="catalog-nav-button catalog-nav-button-disabled catalog-nav-button-left" href="#">
-            <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
-            <path fill="#C1C6CE" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
-            	c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
-            	C7.436,6.16,7.436,5.84,7.237,5.642z"/>
-            </svg>
-
-          </a>
-          <ul class="catalog-nav-list">
-            <li class="catalog-nav-item catalog-nav-item-active"><a class="catalog-nav-link" href="#">1</a></li>
-            <li class="catalog-nav-item"><a class="catalog-nav-link" href="#">2</a></li>
-            <li class="catalog-nav-item"><a class="catalog-nav-link" href="#">3</a></li>
-            <li class="catalog-nav-item"><a class="catalog-nav-link" href="#">4</a></li>
-            <li class="catalog-nav-item"><a class="catalog-nav-link" href="#">5</a></li>
+          </fieldset>
+          <button class="filter-button" type="button" aria-label="Применить настройки фильтра">Применить</button>
+        </form>
+        <section class="main-catalog">
+          <ul class="hit-selling">
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice1.png" width="267" height="267" alt="Сливочное с апельсиновым">
+              <p class="hit-selling-price">310<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+               src="img/ice2.png" width="267" height="267" alt="Сливочно-кофейное">
+              <p class="hit-selling-price">380<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочно-кофейное с кусочками шоколада</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item">
+              <img class="hit-selling-image" src="img/ice3.png" width="267"
+               height="267" alt="Сливочно-клубничное">
+              <p class="hit-selling-price">355<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice4.png" width="267" height="267" alt="Сливочное крем-брюле">
+              <p class="hit-selling-price">415<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочное крем-брюле с карамельной подливкой</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice5.png" width="267" height="267" alt="Сливочное с брусничным">
+              <p class="hit-selling-price">325<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочное с брусничным джемом</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice6.png" width="267" height="267" alt="Сливочно-черничное">
+              <p class="hit-selling-price">410<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочно-черничное с цельными ягодами черники</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice7.png" width="267" height="267" alt="Сливочно-лимонное">
+              <p class="hit-selling-price">375<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочно-лимонное с карамельной присыпкой</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+              <p class="hit-selling-price">320<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочное с шоколадной стружкой</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice9.png" width="267" height="267" alt="Сливочно-ванильное">
+              <p class="hit-selling-price">440<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочно-ванильное с кусочками шоколада</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+              <p class="hit-selling-price">435<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочноe с ментоловым сиропом</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+              <p class="hit-selling-price">355<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочное с кусочками черного шоколада</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
+            <li class="hit-selling-item"><img class="hit-selling-image"
+              src="img/ice12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+              <p class="hit-selling-price">420<span class="hit-selling-rubl"></span><span class="hit-selling-weight">/кг</span></p>
+              <a class="hit-selling-link">Сливочное с мятным сиропом</a>
+              <button class="hit-selling-button button-hidden">Быстрый просмотр</button>
+            </li>
           </ul>
-          <a class="catalog-nav-button catalog-nav-button-right" href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
-            <path fill="#C1C6CE" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
-            	c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
-            	C7.436,6.16,7.436,5.84,7.237,5.642z"/>
-            </svg>
-          </a>
-        </nav>
-      </section>
-    </main>
 
-    <footer class="main-footer main-footer-border">
+          <nav class="main-catalog-nav catalog-nav">
+            <a class="catalog-nav-button catalog-nav-button-disabled catalog-nav-button-left" href="#">
+              <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
+              <path fill="#C1C6CE" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
+              	c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
+              	C7.436,6.16,7.436,5.84,7.237,5.642z"/>
+              </svg>
+
+            </a>
+            <ul class="catalog-nav-list">
+              <li class="catalog-nav-item catalog-nav-item-active"><a class="catalog-nav-link" href="#">1</a></li>
+              <li class="catalog-nav-item"><a class="catalog-nav-link" href="#">2</a></li>
+              <li class="catalog-nav-item"><a class="catalog-nav-link" href="#">3</a></li>
+              <li class="catalog-nav-item"><a class="catalog-nav-link" href="#">4</a></li>
+              <li class="catalog-nav-item"><a class="catalog-nav-link" href="#">5</a></li>
+            </ul>
+            <a class="catalog-nav-button catalog-nav-button-right" href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
+              <path fill="#C1C6CE" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
+              	c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
+              	C7.436,6.16,7.436,5.84,7.237,5.642z"/>
+              </svg>
+            </a>
+          </nav>
+        </section>
+      </main>
+
+      <footer class="main-footer main-footer-border">
         <ul class="main-footer-social social">
             <li class="social-item "><a class="social-link social-link-twitter" href="#"><span class="visually-hidden">Твиттер</span>
               <svg class="social-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
                height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-            <g id="Layer_1">
-            </g>
-            <g id="Layer_2">
+
+            <g>
               <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
                  M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
                 c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136
@@ -411,7 +446,7 @@
             </g>
             </svg></a></li>
             <li class="social-item"><a class="social-link social-link-instagram" href="#"><span class="visually-hidden">Инстаграм</span>
-              <svg class="social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="social-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
               <g>
                 <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
@@ -425,13 +460,13 @@
               </g>
               </svg></a></li>
             <li class="social-item"><a class="social-link social-link-facebook" href="#"><span class="visually-hidden">Фейсбук</span>
-              <svg class="social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="social-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
               <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
                 v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
               </svg></a></li>
             <li class="social-item"><a class="social-link social-link-vk" href="#"><span class="visually-hidden">Вконтакте</span>
-              <svg class="social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="social-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
             <g>
               <path fill="#FFFFFF" d="M16.637,14.495c0.402-0.019,0.719-0.082,0.951-0.188c0.326-0.145,0.54-0.33,0.641-0.559
@@ -465,8 +500,8 @@
             Сделано в <a class="copyright-link" href="#">HTML Academy</a> &copy;	 2017</p>
         </div>
       </footer>
-    </>
-</div>
+    </div>
+  </div>
 </body>
 
 </html>
